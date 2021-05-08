@@ -265,6 +265,10 @@ a:focus {
   transition: color 0.4s ease;
 }
 
+.menu-wrap .menu > div > div > ul > li > a:focus {
+  color: var(--details-color);
+}
+
 /* Mobile logo*/
 
 .mobile-logo {
