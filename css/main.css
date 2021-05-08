@@ -12,10 +12,18 @@
   color: black;
   font-family: "Montserrat"; }
 
+*:focus {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation; }
+
 body {
-  font-family: "Roboto", sans-serif;
   line-height: 1.4;
   overflow-y: hidden; }
+
+a:focus {
+  outline: none; }
 
 .container {
   margin: auto;
@@ -70,6 +78,9 @@ body {
 
 .btn:hover {
   opacity: 0.7; }
+
+.btn:focus {
+  outline: red; }
 
 .btn2 {
   display: inline-block;
