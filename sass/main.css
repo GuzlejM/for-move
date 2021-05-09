@@ -31,7 +31,67 @@ a:focus {
   outline: none;
 }
 
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+  border-radius: 36px;
+  font-size: 0.8rem;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn:focus {
+  outline: red;
+}
+
+.btn2 {
+  display: inline-block;
+  border: none;
+  background-color: rgba(86, 166, 235, 0.15);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+  border-radius: 36px;
+  font-size: 0.8rem;
+}
+
+.btn2:hover {
+  opacity: 0.7;
+}
+
+.btn2-span {
+  color: var(--primary-color);
+}
+
 /* MENU STYLES */
+/* Including breakpoint sm < display: none of menu-wrap (mobile menu)  */
 .menu-wrap {
   position: fixed;
   top: 0;
@@ -272,65 +332,6 @@ a:focus {
   font-size: 0.6rem;
   line-height: 2;
   padding-top: 20px;
-}
-
-.btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.btn {
-  display: inline-block;
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  margin-left: 0.5rem;
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  text-decoration: none;
-  border-radius: 36px;
-  font-size: 0.8rem;
-}
-
-.btn:hover {
-  opacity: 0.7;
-}
-
-.btn:focus {
-  outline: red;
-}
-
-.btn2 {
-  display: inline-block;
-  border: none;
-  background-color: rgba(86, 166, 235, 0.15);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  margin-left: 0.5rem;
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  text-decoration: none;
-  border-radius: 36px;
-  font-size: 0.8rem;
-}
-
-.btn2:hover {
-  opacity: 0.7;
-}
-
-.btn2-span {
-  color: var(--primary-color);
 }
 
 /* Mobile logo*/

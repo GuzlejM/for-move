@@ -1,6 +1,7 @@
 @import 'utilities/_variables.scss';
 @import 'utilities/_mixins.scss';
 @import 'base/_base.scss';
+@import 'components/_buttons.scss';
 @import 'layout/_menu.scss';
 
 
@@ -43,55 +44,7 @@
   padding-top: 20px;
 }
 
-.btn-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
-.btn {
-  display: inline-block;
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  margin-left: 0.5rem;
-  transition: opacity 1s ease-in-out;
-  text-decoration: none;
-  border-radius: 36px;
-  font-size: 0.8rem;
-}
-
-.btn:hover {
-  opacity: 0.7;
-}
-
-.btn:focus {
-  outline: red;
-}
-
-.btn2 {
-  display: inline-block;
-  border: none;
-  background-color: rgba(86, 166, 235, 0.15);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  margin-left: 0.5rem;
-  transition: opacity 1s ease-in-out;
-  text-decoration: none;
-  border-radius: 36px;
-  font-size: 0.8rem;
-}
-
-.btn2:hover {
-  opacity: 0.7;
-}
-
-.btn2-span {
-  color: var(--primary-color);
-}
 
 /* Mobile logo*/
 
