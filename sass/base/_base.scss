@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    
+  }
+  
+  *:focus {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+  }
+  
+  body {
+    line-height: 1.4;
+    overflow-y: hidden;
+    font-family: "Montserrat";
+  }
+  
+  a:focus {
+    outline: none;
+  }
