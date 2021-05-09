@@ -9,8 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
-  font-family: "Montserrat"; }
+  color: black; }
 
 *:focus {
   -webkit-tap-highlight-color: transparent;
@@ -20,7 +19,8 @@
 
 body {
   line-height: 1.4;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  font-family: "Montserrat"; }
 
 a:focus {
   outline: none; }
@@ -202,8 +202,7 @@ a:focus {
   flex: none;
   align-items: center;
   justify-content: center;
-  transform: scale(0);
-  transition: all 0.4s ease; }
+  transform: scale(0); }
 
 .menu-wrap .menu > div > div {
   text-align: center;
@@ -229,7 +228,7 @@ a:focus {
   text-decoration: none;
   transition: color 0.4s ease; }
 
-.menu-wrap .menu > div > div > ul > li > a:focus {
+.menu-wrap .menu > div > div > ul > li > a:hover, .menu-wrap .menu > div > div > ul > li > a:focus {
   color: var(--details-color); }
 
 /* Mobile logo*/
