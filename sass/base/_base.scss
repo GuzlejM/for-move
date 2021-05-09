@@ -18,7 +18,61 @@
     overflow-y: hidden;
     font-family: "Montserrat";
   }
+
+  section {
+      display: flex;
+      flex-direction: row;
+  }
   
+  /* Deleting blue CHROME outline around links buttons*/
   a:focus {
     outline: none;
+  }
+
+  .container {
+    margin: auto;
+    overflow: hidden;
+    @include breakpoint(sm) {
+       margin: 0;
+        min-width: 300px;
+      }
+  }
+
+  .logo {
+    height: 35px;
+    width: auto;
+    padding-top: 25px;
+    margin-left: 20px;
+    @include breakpoint(sm) {
+        height: 50px;
+       }
+    
+  }
+  
+  .img {
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    height: 40%;
+    transform: rotate(10deg);
+    @include breakpoint(sm) {
+        position: relative;
+        min-width: 300px;
+      }
+  }
+  
+  .circle {
+    position: absolute;
+    bottom: -8%;
+    left: -40%;
+    height: 300px;
+    width: 300px;
+    background-color: var(--details-color);
+    border-radius: 50%;
+    opacity: 25%;
+    z-index: -1;
+    @include breakpoint(sm) {
+      position: relative;
+      min-width: 300px;
+    }
   }
