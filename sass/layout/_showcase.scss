@@ -1,38 +1,50 @@
-.showcase {
-    color: #fff;
-    height: 100vh;
-    padding: 0 20px;
-    position: relative;
+.container {
+  overflow: hidden;
+  @include breakpoint(sm) {
+    margin: 0;
+    min-width: 300px;
+    width: 50%;
   }
-  
-  .showcase:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    @include breakpoint(sm) {
-      position: relative;
-      content: normal;
-     
-     }
-  }
-  
-  .showcase .showcase-inner {
+}
+
+section {
+  color: #fff;
+  height: 100vh;
+  padding: 0 20px;
+  @include breakpoint(xs) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+  }
+}
+
+.showcase2 {
+  position: relative;
+
+  width: 50%;
+  @include breakpoint(xs) {
     height: 50%;
+    width: 100%;
   }
-  
-  .showcase h1 {
-    font-size: 1.4rem;
+}
+
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  @include breakpoint(sm) {
+    position: relative;
+    content: normal;
+    height: 100%;
   }
-  
-  .showcase p {
-    font-size: 0.6rem;
-    line-height: 2;
-    padding-top: 20px;
-  }
+}
+
+.showcase h1 {
+  font-size: 1.4rem;
+}
+
+.showcase p {
+  font-size: 0.6rem;
+  line-height: 2;
+  padding-top: 20px;
+}

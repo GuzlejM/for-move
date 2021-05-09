@@ -1,0 +1,60 @@
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    div {
+        width: 50%;
+    }
+
+}
+
+.logo {
+    height: 35px;
+    width: auto;
+    padding-top: 25px;
+    margin-left: 20px;
+    @include breakpoint(sm) {
+        height: 50px;
+       }
+    
+  }
+
+.navbar {
+    width: 50%;
+    @include breakpoint(xs) {
+        display: none;
+    }
+
+
+
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      list-style: none;
+
+      li {
+          padding-top: 20px;
+          font-size: 20px;
+
+          a {
+            text-decoration: none
+          }
+
+          a:hover {
+              color: rgba(117, 82, 199, 1);
+
+              &::after {
+                content: "";
+                height: 10px;
+                width: 100%;
+                background-color: red;
+            }
+          }
+
+
+      }
+    }
+}

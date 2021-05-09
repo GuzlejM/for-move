@@ -1,78 +1,52 @@
+$animate: all 0.2s ease-in-out;
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: black;
-    
-  }
-  
-  *:focus {
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-  }
-  
-  body {
-    line-height: 1.4;
-    overflow-y: hidden;
-    font-family: "Montserrat";
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
 
-  section {
-      display: flex;
-      flex-direction: row;
-  }
-  
-  /* Deleting blue CHROME outline around links buttons*/
-  a:focus {
-    outline: none;
-  }
+*:focus {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
 
-  .container {
-    margin: auto;
-    overflow: hidden;
-    @include breakpoint(sm) {
-       margin: 0;
-        min-width: 300px;
-      }
-  }
+body {
+  line-height: 1.4;
+  overflow-y: hidden;
+  font-family: "Montserrat";
+}
 
-  .logo {
-    height: 35px;
-    width: auto;
-    padding-top: 25px;
-    margin-left: 20px;
-    @include breakpoint(sm) {
-        height: 50px;
-       }
-    
-  }
-  
-  .img {
-    position: absolute;
-    bottom: 0;
-    left: 8%;
-    height: 40%;
-    transform: rotate(10deg);
-    @include breakpoint(sm) {
-        position: relative;
-        min-width: 300px;
-      }
-  }
-  
-  .circle {
-    position: absolute;
-    bottom: -8%;
-    left: -40%;
-    height: 300px;
-    width: 300px;
-    background-color: var(--details-color);
-    border-radius: 50%;
-    opacity: 25%;
-    z-index: -1;
-    @include breakpoint(sm) {
-      position: relative;
-      min-width: 300px;
-    }
-  }
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Deleting blue CHROME outline around links buttons*/
+a:focus {
+  outline: none;
+}
+
+.img {
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  width: 250px;
+  transform: rotate(10deg);
+}
+
+.circle {
+  position: absolute;
+  bottom: -8%;
+  left: -40%;
+  height: 300px;
+  width: 300px;
+  background-color: var(--details-color);
+  border-radius: 50%;
+  opacity: 25%;
+  z-index: -1;
+
+}
