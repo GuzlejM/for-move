@@ -6,7 +6,7 @@ $animate: all 0.2s ease-in-out;
   box-sizing: border-box;
   color: black;
 }
-
+/* Deleting blue CHROME outline around links buttons*/
 *:focus {
   -webkit-tap-highlight-color: transparent;
   outline: none;

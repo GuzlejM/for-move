@@ -21,7 +21,7 @@
     border-radius: 36px;
     font-size: 0.8rem; 
   }
-  
+    /* decreasing opacity on hover*/
   .btn:hover {
     opacity: 0.7;
   }
@@ -43,11 +43,11 @@
     border-radius: 36px;
     font-size: 0.8rem; 
   }
-  
+  /* decreasing opacity on hover*/
   .btn2:hover {
     opacity: 0.7;
   }
-  
+  /* Viac info*/
   .btn2-span {
     margin-left: 3px;
     color: var(--primary-color);
