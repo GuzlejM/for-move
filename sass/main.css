@@ -51,6 +51,15 @@ a:focus {
           transform: rotate(10deg);
 }
 
+@media (min-width: 768px) {
+  .img {
+    height: 600px;
+    width: 600px;
+    left: 5%;
+    top: 17%;
+  }
+}
+
 .circle {
   position: absolute;
   bottom: -8%;
@@ -61,6 +70,15 @@ a:focus {
   border-radius: 50%;
   opacity: 25%;
   z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .circle {
+    height: 600px;
+    width: 600px;
+    left: -32%;
+    top: 17%;
+  }
 }
 
 .btn-container {
@@ -108,7 +126,9 @@ a:focus {
 }
 
 .btn2 {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border: none;
   background-color: rgba(86, 166, 235, 0.15);
   color: #fff;
@@ -127,7 +147,129 @@ a:focus {
 }
 
 .btn2-span {
+  margin-left: 3px;
   color: var(--primary-color);
+}
+
+/* Mobile location div*/
+.menu-bottom {
+  margin: 0 auto;
+}
+
+.Bratislave {
+  color: var(--details-color);
+}
+
+.mobile-location {
+  -webkit-box-shadow: 0 7.2px 155.7px -10px rgba(0, 0, 0, 0.078), 0 13.8px 193.9px -10px rgba(0, 0, 0, 0.111), 0 20.3px 207.6px -10px rgba(0, 0, 0, 0.139), 0 29.5px 201.4px -10px rgba(0, 0, 0, 0.172), 0 65px 135px -10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 7.2px 155.7px -10px rgba(0, 0, 0, 0.078), 0 13.8px 193.9px -10px rgba(0, 0, 0, 0.111), 0 20.3px 207.6px -10px rgba(0, 0, 0, 0.139), 0 29.5px 201.4px -10px rgba(0, 0, 0, 0.172), 0 65px 135px -10px rgba(0, 0, 0, 0.25);
+  -webkit-filter: invert(37%) sepia(96%) saturate(449%) hue-rotate(217deg) brightness(85%) contrast(95%);
+          filter: invert(37%) sepia(96%) saturate(449%) hue-rotate(217deg) brightness(85%) contrast(95%);
+}
+
+/* Desktop location div*/
+.location {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  width: 30%;
+  float: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 767px) {
+  .location {
+    display: none;
+  }
+}
+
+.location-pulse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--details-color);
+  border-radius: 50%;
+  text-align: center;
+  -webkit-animation: animate 3s linear infinite;
+          animation: animate 3s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(117, 82, 199, 0.7), 0 0 0 0 rgba(117, 82, 199, 0.7);
+            box-shadow: 0 0 0 0 rgba(117, 82, 199, 0.7), 0 0 0 0 rgba(117, 82, 199, 0.7);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0 25px rgba(117, 82, 199, 0), 0 0 0 0 rgba(117, 82, 199, 0.7);
+            box-shadow: 0 0 0 25px rgba(117, 82, 199, 0), 0 0 0 0 rgba(117, 82, 199, 0.7);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 0 25px rgba(117, 82, 199, 0), 0 0 0 12px rgba(117, 82, 199, 0);
+            box-shadow: 0 0 0 25px rgba(117, 82, 199, 0), 0 0 0 12px rgba(117, 82, 199, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(117, 82, 199, 0), 0 0 0 12px rgba(117, 82, 199, 0);
+            box-shadow: 0 0 0 0 rgba(117, 82, 199, 0), 0 0 0 12px rgba(117, 82, 199, 0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(117, 82, 199, 0.7), 0 0 0 0 rgba(117, 82, 199, 0.7);
+            box-shadow: 0 0 0 0 rgba(117, 82, 199, 0.7), 0 0 0 0 rgba(117, 82, 199, 0.7);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0 25px rgba(117, 82, 199, 0), 0 0 0 0 rgba(117, 82, 199, 0.7);
+            box-shadow: 0 0 0 25px rgba(117, 82, 199, 0), 0 0 0 0 rgba(117, 82, 199, 0.7);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 0 25px rgba(117, 82, 199, 0), 0 0 0 12px rgba(117, 82, 199, 0);
+            box-shadow: 0 0 0 25px rgba(117, 82, 199, 0), 0 0 0 12px rgba(117, 82, 199, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(117, 82, 199, 0), 0 0 0 12px rgba(117, 82, 199, 0);
+            box-shadow: 0 0 0 0 rgba(117, 82, 199, 0), 0 0 0 12px rgba(117, 82, 199, 0);
+  }
+}
+
+p.sentence {
+  padding-top: 0;
+}
+
+/* Najdete nas v <span>Bratislave<span>*/
+.Bratislave {
+  color: var(--details-color);
+}
+
+.location-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.info-icon {
+  height: 15px;
+  -webkit-filter: invert(67%) sepia(69%) saturate(2310%) hue-rotate(181deg) brightness(95%) contrast(94%);
+          filter: invert(67%) sepia(69%) saturate(2310%) hue-rotate(181deg) brightness(95%) contrast(94%);
 }
 
 header {
@@ -154,7 +296,8 @@ header div {
 
 @media (min-width: 768px) {
   .logo {
-    height: 50px;
+    height: 40px;
+    margin-left: 100px;
   }
 }
 
@@ -431,7 +574,7 @@ section {
 
 .showcase2 {
   position: relative;
-  width: 50%;
+  min-width: 50vw;
 }
 
 @media (max-width: 767px) {
@@ -457,11 +600,24 @@ section {
     position: relative;
     content: normal;
     height: 100%;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 0 200px 80px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 .showcase h1 {
   font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
 }
 
 .showcase p {
@@ -470,19 +626,10 @@ section {
   padding-top: 20px;
 }
 
-/* Mobile logo*/
-.menu-bottom {
-  margin: 0 auto;
-}
-
-.Bratislave {
-  color: var(--details-color);
-}
-
-.mobile-location {
-  -webkit-box-shadow: 0 7.2px 155.7px -10px rgba(0, 0, 0, 0.078), 0 13.8px 193.9px -10px rgba(0, 0, 0, 0.111), 0 20.3px 207.6px -10px rgba(0, 0, 0, 0.139), 0 29.5px 201.4px -10px rgba(0, 0, 0, 0.172), 0 65px 135px -10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 7.2px 155.7px -10px rgba(0, 0, 0, 0.078), 0 13.8px 193.9px -10px rgba(0, 0, 0, 0.111), 0 20.3px 207.6px -10px rgba(0, 0, 0, 0.139), 0 29.5px 201.4px -10px rgba(0, 0, 0, 0.172), 0 65px 135px -10px rgba(0, 0, 0, 0.25);
-  -webkit-filter: invert(37%) sepia(96%) saturate(449%) hue-rotate(217deg) brightness(85%) contrast(95%);
-          filter: invert(37%) sepia(96%) saturate(449%) hue-rotate(217deg) brightness(85%) contrast(95%);
+@media (min-width: 768px) {
+  .showcase p {
+    font-size: 1rem;
+    width: 70%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

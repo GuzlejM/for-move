@@ -15,7 +15,8 @@ header {
     padding-top: 25px;
     margin-left: 20px;
     @include breakpoint(sm) {
-        height: 50px;
+        height: 40px;
+        margin-left: 100px;
        }
     
   }

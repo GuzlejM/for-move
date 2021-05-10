@@ -31,7 +31,7 @@
   }
   
   .btn2 {
-    display: inline-block;
+    display: flex;
     border: none;
     background-color: rgba(86, 166, 235, 0.15);
     color: #fff;
@@ -49,5 +49,6 @@
   }
   
   .btn2-span {
+    margin-left: 3px;
     color: var(--primary-color);
   }

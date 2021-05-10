@@ -36,6 +36,12 @@ a:focus {
   left: 8%;
   width: 250px;
   transform: rotate(10deg);
+  @include breakpoint(sm) {
+    height: 600px;
+    width: 600px;
+    left: 5%;
+    top: 17%;
+}
 }
 
 .circle {
@@ -48,5 +54,10 @@ a:focus {
   border-radius: 50%;
   opacity: 25%;
   z-index: -1;
-
+  @include breakpoint(sm) {
+    height: 600px;
+    width: 600px;
+    left: -32%;
+    top: 17%;
+}
 }

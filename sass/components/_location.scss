@@ -1,0 +1,82 @@
+/* Mobile location div*/
+
+.menu-bottom {
+  margin: 0 auto;
+}
+.Bratislave {
+  color: var(--details-color);
+}
+
+.mobile-location {
+  box-shadow: 0 7.2px 155.7px -10px rgba(0, 0, 0, 0.078),
+    0 13.8px 193.9px -10px rgba(0, 0, 0, 0.111),
+    0 20.3px 207.6px -10px rgba(0, 0, 0, 0.139),
+    0 29.5px 201.4px -10px rgba(0, 0, 0, 0.172),
+    0 65px 135px -10px rgba(0, 0, 0, 0.25);
+
+  filter: invert(37%) sepia(96%) saturate(449%) hue-rotate(217deg)
+    brightness(85%) contrast(95%);
+}
+
+/* Desktop location div*/
+
+.location {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  width: 30%;
+  float: right;
+  align-items: center;
+  justify-content: space-around;
+  @include breakpoint(xs) {
+    display: none;
+  }
+}
+
+.location-pulse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--details-color);
+    border-radius: 50%;
+    text-align: center;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgba(117, 82, 199, .7), 0 0 0 0 rgba(117, 82, 199, .7);
+    }
+    40% {
+        box-shadow: 0 0 0 25px rgba(117, 82, 199, 0), 0 0 0 0 rgba(117, 82, 199, .7);
+    }
+    80% {
+        box-shadow: 0 0 0 25px rgba(117, 82, 199, 0), 0 0 0 12px rgba(117, 82, 199, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(117, 82, 199, 0), 0 0 0 12px rgba(117, 82, 199, 0);
+    }
+}
+p.sentence {
+  padding-top: 0;
+}
+
+/* Najdete nas v <span>Bratislave<span>*/
+.Bratislave {
+  color: var(--details-color);
+}
+
+.location-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.info-icon {
+  height: 15px;
+  filter: invert(67%) sepia(69%) saturate(2310%) hue-rotate(181deg)
+    brightness(95%) contrast(94%);
+}
