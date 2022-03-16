@@ -1,5 +1,3 @@
-Test project for the company // madelo.co
-
 Link to visit the page: 
 
 https://for-move.vercel.app/
